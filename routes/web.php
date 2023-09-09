@@ -36,3 +36,5 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+Route::get('/shop',[\App\Http\Controllers\ShopController::class,'index']);
